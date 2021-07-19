@@ -1,3 +1,4 @@
+import { extendTheme } from '@chakra-ui/react';
 import {
     typography,
     borders,
@@ -9,10 +10,10 @@ import {
     shadows,
     spacing,
     transitions,
-    zIndex,
+    zIndex
 } from './base';
 
-export const theme = {
+export const theme = extendTheme({
     borders,
     breakpoints,
     colors,
@@ -23,5 +24,5 @@ export const theme = {
     spacing,
     transitions,
     typography,
-    zIndex,
-};
+    zIndex
+});

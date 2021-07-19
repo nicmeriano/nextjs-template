@@ -6,7 +6,9 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "sb:dev": "start-storybook -p 6006",
+        "sb:build": "build-storybook"
     },
     "dependencies": {
         "@chakra-ui/react": "^1.6.5",
@@ -18,7 +20,13 @@
         "react-dom": "^17.0.2"
     },
     "devDependencies": {
+        "@babel/core": "^7.14.6",
+        "@storybook/addon-actions": "^6.3.4",
+        "@storybook/addon-links": "^6.3.4",
+        "@storybook/addons": "^6.3.4",
+        "@storybook/react": "^6.3.4",
         "@types/react": "^17.0.14",
+        "babel-loader": "^8.2.2",
         "eslint": "^7.30.0",
         "eslint-config-next": "^11.0.1",
         "prettier": "^2.3.2",
