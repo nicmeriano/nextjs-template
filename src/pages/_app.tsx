@@ -1,13 +1,11 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
-import { extendTheme } from '@chakra-ui/react';
 import { theme } from '../theme';
-
-const myTheme = extendTheme(theme);
+import 'focus-visible';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <ChakraProvider theme={myTheme}>
+        <ChakraProvider theme={theme}>
             <Component {...pageProps} />
         </ChakraProvider>
     );
